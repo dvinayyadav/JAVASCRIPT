@@ -1,0 +1,75 @@
+JAVASCRIPT: it is used to add functionality into webapp.
+           - it is interpreted language.
+           - it is loosely typed language.
+
+
+-- loosely typed language means in javascript at the time of variable declartion we wont mention what type of data it contains until initialising it.
+
+
+How to use JS: there are 2 ways to use JS.
+  1. internal jS : in html file we use script tag and in that we write javascript code.
+  2. external js : in this we create a separate js file and import that js file in html file by using script tag.
+
+
+how to get output in js : 1. document.write() : it will display output in html page. it will display output in same line
+                        2.window alert(): it will display output in model popup window.
+                        3.console.log(): it will display output in browser console or in terminal.
+                        4.innerHTML(DOM): it will display output inside an element
+
+
+HOISTING: MOving variable and function declaration at top of webpage.
+
+
+"Variable : it is use to store data in it.
+          - we can create variable in JS bu using var,let,constant
+
+var : it create function scope variable.
+     -we can use variable before its declaration.
+     -we can re-declare variable.
+
+let : it create block scope variable.
+    - we can not use variable before declaration.
+    - we can not re-declare variable.
+
+const : it create block scope variable.(like final variable in java)
+      - we can not use variable befoe its declaration.
+      - in this when we declare a variable at same time we have initialize it.
+      - its data will never change on run time. 
+
+
+how to change attribute value by using DOM.
+hoe to call function by suing element.
+how to access data from input control.
+
+Array :
+     -it is used to store multiple values with same data.
+     - in array data store on index basis.
+     -we can access array values outside by writting arrayName[indexNumber].
+
+Array Methods  :
+ 1: push(): it is used to insert values at last index  of an array.
+ 2: pop(): it removes values from last index of an array.
+ 3. unshift(): it use to insert values  at starting index of array.
+ 4. shift(): it removes values from starting index of array.
+ 5. splice(startIndex,delCount,valuesToAdd): it is used to insert and remove values from the middle of an array.
+ 6. toString(): converts the array data into string.
+ 7.join(seperator) : it is used to convert array data into string with seperator.
+
+
+ OBJECT : it is used to store multiple values with different data type.
+        - in object data tstore in key amd value paired formate.
+        - we can access object data outside by writing object.keyname.
+        - object type of data is denoted by
+        
+
+callback function : passing a function as an arguemnt inside another function is called callback function.
+
+Date and Time : if we want to display date and time in javascript first to create an object for Date class.
+              - Date object return information from browser.
+
+
+              let objName=new Date();
+
+
+
+

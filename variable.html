@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // PRIME NUMBERS BETWEEN X,Y
+        
+    //     for(let i=100;i<200;i++){
+    //         if(primeOrNot(i)){
+    //             console.log(i);
+    //         }
+    //     }
+
+        
+    // function primeOrNot(x){
+    //     for(let i=2;i<x;i++){
+    //         if(x%i==0){
+    //            return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+
+
+    // Array function(lambda expressions in java)
+    let div = (x,y) => x/y +"<br>";
+    document.write(div(100,10));
+    
+    let fullName=(fname,lname,mname="")=>{
+        return fname+lname+mname;
+    }
+    document.write(fullName("Vinay","Yadav"));
+    document.write(fullName("Vinay","Yadav","Devara"));
+
+ 
+    let stdList=(...std)=>{
+        return std;
+    }
+document.write(stdList("rahul","vinay"));
+document.write(stdList("rahul","vinay","maneet"));
+
+
+    </script>
+
+  
+</body>
+</html>

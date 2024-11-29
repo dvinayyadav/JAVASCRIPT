@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let std=[
+    {id:1,name:"VINAY",post:"java developer",salary:50000,gender:"male",age:25,city:"Kurnool",state:"Andhra"},
+    {id:2,name:"raji",post:"Manager",salary:50000,gender:"male",age:25,city:"Kurnool",state:"TELANGANA"},
+    {id:3,name:"Madhu",post:"PYthon developer",salary:50000,gender:"female",age:42,city:"Kurnool",state:"Tamilnadu"},
+    {id:4,name:"Lalitha",post:"java developer",salary:50000,gender:"female",age:35,city:"Kurnool",state:"Andhra"},
+    {id:5,name:"Maneet",post:"Manager",salary:50000,gender:"male",age:65,city:"Kurnool",state:"Andhra"},
+    {id:6,name:"meghana",post:"java developer",salary:50000,gender:"female",age:25,city:"Kurnool",state:"Tamilnadu"},
+    {id:7,name:"Suresh",post:"Tester",salary:50000,gender:"male",age:25,city:"Kurnool",state:"Andhra"},
+    {id:8,name:"Harish",post:"PYthon developer",salary:58000,gender:"male",age:22,city:"Nellore",state:"Tamilnadu"},
+    {id:9,name:"NARASHIMHA",post:"Manager",salary:60000,gender:"male",age:25,city:"Nellore",state:"TELANGANA"},
+    {id:10,name:"Ajay",post:"java developer",salary:55000,gender:"male",age:30,city:"Kurnool",state:"Tamilnadu"}
+    ]
+
+    let i=0;
+while(i<std.length){
+
+document.write(`Id:${std[i].id} Name:${std[i].name} Contact:${std[i].number} Gender:${std[i].gender}`, "<br>");
+
+i++;
+}
+document.write("<br><br><br><br>,all details odf manager,<br><br>");
+
+for(let s of std){
+    if(s.post===("Manager"))
+  document.write(`Id:${s.id} Name:${s.name} Contact:${s.number} Gender:${s.gender}`, "<br>")
+}
+
+document.write("<br><br><br><br>,all details of females, <br><br>");
+for(let s of std){
+    if(s.gender==="female")
+  document.write(`Id:${s.id} Name:${s.name} Contact:${s.number} Gender:${s.gender}`, "<br>")
+}
+document.write(" <br><br><br><br>,all details age>55,<br><br> ");
+for(let s of std){
+    if(s.age>55)
+  document.write(`Id:${s.id} Name:${s.name} Contact:${s.number} Gender:${s.gender}`, "<br>")
+}
+document.write("<br><br><br><br>,all details  of tamilnadu state,<br><br> ");
+for(let s of std){
+    if(s.state==="Tamilnadu")
+  document.write(`Id:${s.id} Name:${s.name} Contact:${s.number} Gender:${s.gender}`, "<br>")
+}
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px blue solid;
+    width: 350px;
+    height: 246px;
+    position: relative;
+    margin: auto;
+    padding: 12px;
+    background-color: aqua;
+        }
+        .btn{
+            margin: 9px;
+    color: blue;
+    border-radius: 9px;
+    width: 65px;
+        }
+        .di{
+            position: absolute;
+            bottom: 68px;
+        }
+    </style>
+</head>
+<body>
+    <form class="box">
+        <div>
+    <label for="num1">Enter your 1<sup>st</sup> Number</label>
+    <input type="text" name="num1" id="num1" style=" border-radius: 5px;"><br>
+</div>
+<div>
+    <label for="num2">Enter your 2<sup>nd</sup> Number</label>
+    <input type="text" name="num1" id="num2" style=" border-radius: 5px;"><br>
+</div>
+    <div class="di">
+    <button class="btn" type="button" onclick="AddTwoNumbers()">Add</button>
+    <button class="btn" type="button" onclick="SubTwoNumbers()">SUB</button>
+    <button class="btn" type="button" onclick="MulTwoNumbers()">MUL</button>
+    <button class="btn" type="button" onclick="DivTwoNumbers()">DIV</button>
+</div>
+<div>
+    <label for="Total">Result</label>
+    
+</div>
+</form>
+<script>
+    
+    function AddTwoNumbers(){
+        let x=document.getElementById("num1").value;
+        let y=document.getElementById("num2").value;
+        console.log(parseInt(x)+parseInt(y));
+    }
+    function SubTwoNumbers(){
+        let x=document.getElementById("num1").value;
+        let y=document.getElementById("num2").value;
+        console.log(parseInt(x)-parseInt(y));
+    }
+    function MulTwoNumbers(){
+        let x=document.getElementById("num1").value;
+        let y=document.getElementById("num2").value;
+        console.log(parseInt(x)*parseInt(y));
+    }
+    function DivTwoNumbers(){
+        let x=document.getElementById("num1").value;
+        let y=document.getElementById("num2").value;
+        console.log(parseInt(x)/parseInt(y));
+    }
+
+</script>
+</body>
+</html>

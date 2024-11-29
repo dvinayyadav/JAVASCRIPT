@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        let arr=["vinay","yadav","devara"];
+        arr.push("maneet");
+        console.log(arr);
+
+        //pop()
+        arr.pop();
+        console.log(arr);
+
+        //unshift()
+        arr.unshift("suresh","lalitha");
+        console.log(arr);
+
+        //shift()
+        arr.shift();
+        console.log(arr);
+   
+        arr.splice(2,0,"MADHU","MEGHANA");
+        console.log(arr);
+
+        arr.splice(4,2);
+        console.log(arr);
+
+let std=[
+    {id:1,name:"VINAY",contact:36985,gender:"male"},
+    {id:2,name:"YADAV",contact:36984,gender:"male"},
+    {id:3,name:"DEVARA",contact:36986,gender:"male"}
+]
+let i=0;
+while(i<std.length){
+
+document.write(`Id:${std[i].id} Name:${std[i].name} Contact:${std[i].number} Gender:${std[i].gender}`, "<br>");
+
+i++;
+}
+        
+
+    </Script>
+</body>
+</html>

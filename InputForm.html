@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px blue solid;
+    width: 350px;
+    height: 246px;
+    position: relative;
+    margin: auto;
+    padding: 12px;
+    background-color: aqua;
+        }
+        .btn{
+            position: absolute;
+    left: 162px;
+    margin: 15px;
+    color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form class="box">
+    <label for="num1">Enter your 1<sup>st</sup> Number</label>
+    <input type="text" name="num1" id="num1" style=" border-radius: 5px;"><br>
+    <label for="num2">Enter your 2<sup>nd</sup> Number</label>
+    <input type="text" name="num1" id="num2" style=" border-radius: 5px;"><br>
+    <button class="btn" type="button" onclick="AddTwoNumbers()">Add</button>
+</form>
+<script>
+    
+    function AddTwoNumbers(){
+        let x=document.getElementById("num1").value;
+        let y=document.getElementById("num2").value;
+        console.log(parseInt(x)+parseInt(y));
+    }
+</script>
+</body>
+</html>
