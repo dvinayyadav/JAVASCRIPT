@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type ="text/javascript"> 
+function lowercase(){
+var x=document.getElementById("fname");
+x.value=x.value.toLowerCase();
+}
+function uppercase(){
+var x=document.getElementById("lname");
+x.value=x.value.toUpperCase();
+}
+</script>
+</head>
+<body >
+<form>
+<label>USERNAME</label>
+<input type="text" id="fname" onblur="lowercase()" >
+<label>PASSWORD</label>
+<input type="text" id="lname" onblur="uppercase()">
+</form>
+</body>
+</html>

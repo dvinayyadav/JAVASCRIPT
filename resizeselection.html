@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type ="text/javascript"> 
+function resize(){
+alert("this page is not allowed to resize");
+}
+function selcting(){
+alert("this page is not allowed for selection");
+}
+</script>
+</head>
+<body onresize="resize()">
+<p>if u triex to resize the web page it displays the alert box bye using resize event in boday tag</p>
+<form>
+<label>USERNAME<label>
+<input type="text" name="fname" onselect="selcting()" >
+<label>PASSWORD<label>
+<input type="text" name="PASSWORD">
+</body>
+</html>
