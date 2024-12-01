@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Image and Text</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: bisque;
+        }
+
+        .back {
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .pic {
+            height: 300px;
+            width: 300px;
+            padding: 15px;
+           
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        .toggle-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            color: gray;
+            border: 2px solid gray;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .toggle-btn:hover {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <img class="pic" id="toggleImage" src="../Assests/Images/Prabhas.jpg" alt="Prabhas">
+        <h2 id="actorName">PRABHAS</h2>
+        <button class="toggle-btn" id="toggleButton">Toggle Image and Text</button>
+    </div>
+
+    <script>
+        const image = document.getElementById('toggleImage');
+        const nameText = document.getElementById('actorName');
+        const button = document.getElementById('toggleButton');
+
+      
+        const image1 = "../Assests/Images/Prabhas.jpg";
+        const image2 = "../Assests/Images/2720552.webp";
+        const text1 = "PRABHAS";
+        const text2 = "NTR";
+
+      
+        button.addEventListener('click', () => {
+            if (image.src.includes('Prabhas.jpg')) {
+                image.src = image2;
+                nameText.textContent = text2;
+            } else {
+                image.src = image1;
+                nameText.textContent = text1;
+            }
+        });
+    </script>
+</body>
+</html>
